@@ -4,4 +4,37 @@
 
   <!-- activate next line to be able to deploy applications in apps -->
   <Deployments dir="apps" />
+
+  <Resource id="MyJmsResourceAdapter" type="ActiveMQResourceAdapter">
+      # Do not start the embedded ActiveMQ broker
+      BrokerXmlConfig  =
+      ServerUrl = tcp://172.17.0.3:61616
+  </Resource>
+
+  <Resource id="MyJmsConnectionFactory" type="javax.jms.ConnectionFactory">
+      ResourceAdapter = MyJmsResourceAdapter
+  </Resource>
+
+  <Container id="MyJmsMdbContainer" ctype="MESSAGE">
+      ResourceAdapter = MyJmsResourceAdapter
+  </Container>
+
+  <Resource id="MyQueue" type="javax.jms.Queue"/>
+  <Resource id="MyTopic" type="javax.jms.Topic"/>
+
+  <Resource id="myDataSource" type="javax.sql.DataSource">
+    JdbcDriver  com.mysql.jdbc.Driver
+    JdbcUrl jdbc:mysql://172.17.0.4/test
+    password = root
+    passwordCipher = PlainText
+    poolPreparedStatements = false
+    serviceId = 
+    testOnBorrow = true
+    testOnReturn = false
+    testWhileIdle = false
+    timeBetweenEvictionRuns = -1 millisecond
+    userName = root
+    validationQuery = select 1
+</Resource>
+
 </tomee>

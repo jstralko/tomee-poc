@@ -1,4 +1,4 @@
-package com.wk;
+package local.gerb;
 
 import javax.ejb.EJB;
 import javax.servlet.ServletException;

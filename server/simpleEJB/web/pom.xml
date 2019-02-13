@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<name>clientEJB-web</name>
-	<artifactId>clientEJB-web</artifactId>
+	<name>simpleEJB-web</name>
+	<artifactId>simpleEJB-web</artifactId>
 	<version>1.0</version>
 
 	<parent>
-		<artifactId>clientEJB</artifactId>
+		<artifactId>simpleEJB</artifactId>
 		<groupId>local.gerb</groupId>
 		<version>1.0</version>
 	</parent>
@@ -17,7 +17,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>local.gerb</groupId>
-			<artifactId>clientEJB-ejbs</artifactId>
+			<artifactId>simpleEJB-ejbs</artifactId>
 			<version>1.0</version>
 			<scope>provided</scope>
 			<type>ejb</type>

@@ -8,7 +8,7 @@
 
 	<parent>
 		<artifactId>simpleEJB</artifactId>
-		<groupId>com.wk</groupId>
+		<groupId>local.gerb</groupId>
 		<version>1.0</version>
 	</parent>
 
@@ -24,9 +24,14 @@
           			<defaultLibBundleDir>lib</defaultLibBundleDir>
 					<modules>
 						<ejbModule>
-							<groupId>com.wk</groupId>
+							<groupId>local.gerb</groupId>
 							<artifactId>simpleEJB-ejbs</artifactId>
 						</ejbModule>
+						<webModule>
+							<groupId>local.gerb</groupId>
+							<artifactId>simpleEJB-web</artifactId>
+							<contextRoot>/web</contextRoot>
+						</webModule>
 					</modules>
 				</configuration>
 			</plugin>
@@ -35,10 +40,16 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.wk</groupId>
+			<groupId>local.gerb</groupId>
 			<artifactId>simpleEJB-ejbs</artifactId>
 			<version>1.0</version>
 			<type>ejb</type>
+		</dependency>
+				<dependency>
+			<groupId>local.gerb</groupId>
+			<artifactId>simpleEJB-web</artifactId>
+			<version>1.0</version>
+			<type>war</type>
 		</dependency>
 	</dependencies>
 </project>

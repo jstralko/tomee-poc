@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<name>simpleEJB</name>
-	<groupId>com.wk</groupId>
+	<groupId>local.gerb</groupId>
 	<artifactId>simpleEJB</artifactId>
 	<version>1.0</version>
 
@@ -33,6 +33,7 @@
 	<modules>
 		<module>ejb-client</module>
 		<module>ejbs</module>
+		<module>web</module>
 		<module>ear</module>
 	</modules>
 
@@ -75,53 +76,32 @@
 			<version>1.2.14</version>
 		</dependency>
 	</dependencies>
-
-	<distributionManagement>
-		<snapshotRepository>
-			<id>itrepos</id>
-			<url>dav:http://itrepos.lexi.com:8083/archiva/repository/lexi_snapshots/</url>
-		</snapshotRepository>
-		<repository>
-			<id>itrepos</id>
-			<url>dav:http://itrepos.lexi.com:8083/archiva/repository/lexi/</url>
-		</repository>
-	</distributionManagement>
-
 	<repositories>
 		<repository>
-			<id>3rdparty</id>
-			<name>Third Party Jar Repository</name>
-			<url>http://itrepos.lexi.com:8083/archiva/repository/3rdparty/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
+			<id>central</id>
+			<name>Maven Repository Switchboard</name>
+			<layout>default</layout>
+			<url>http://repo1.maven.org/maven2</url>
 			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>lexi</id>
-			<name>Lexicomp Repository</name>
-			<url>http://itrepos.lexi.com:8083/archiva/repository/lexi/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>lexi_snapshots</id>
-			<name>Lexicomp SNAPSHOT Repository</name>
-			<url>http://itrepos.lexi.com:8083/archiva/repository/lexi_snapshots/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
+			<enabled>false</enabled>
 			</snapshots>
 		</repository>
 	</repositories>
+ 
+	<pluginRepositories>
+		<pluginRepository>
+			<id>central</id>
+			<name>Maven Plugin Repository</name>
+			<url>http://repo1.maven.org/maven2</url>
+			<layout>default</layout>
+			<snapshots>
+			<enabled>false</enabled>
+			</snapshots>
+			<releases>
+			<updatePolicy>never</updatePolicy>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -8,7 +8,7 @@
 
 	<parent>
 		<artifactId>clientEJB</artifactId>
-		<groupId>com.wk</groupId>
+		<groupId>local.gerb</groupId>
 		<version>1.0</version>
 	</parent>
 
@@ -24,12 +24,12 @@
           			<defaultLibBundleDir>lib</defaultLibBundleDir>
 					<modules>
 						<webModule>
-							<groupId>com.wk</groupId>
+							<groupId>local.gerb</groupId>
 							<artifactId>clientEJB-web</artifactId>
 							<contextRoot>/web</contextRoot>
 						</webModule>
 						<ejbModule>
-							<groupId>com.wk</groupId>
+							<groupId>local.gerb</groupId>
 							<artifactId>clientEJB-ejbs</artifactId>
 						</ejbModule>
 					</modules>
@@ -40,13 +40,13 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.wk</groupId>
+			<groupId>local.gerb</groupId>
 			<artifactId>clientEJB-web</artifactId>
 			<version>1.0</version>
 			<type>war</type>
 		</dependency>
 		<dependency>
-			<groupId>com.wk</groupId>
+			<groupId>local.gerb</groupId>
 			<artifactId>clientEJB-ejbs</artifactId>
 			<version>1.0</version>
 			<type>ejb</type>
