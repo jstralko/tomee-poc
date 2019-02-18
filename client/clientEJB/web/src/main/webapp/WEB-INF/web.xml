@@ -3,7 +3,7 @@
   <display-name>simpleEJB</display-name>
   <servlet>
     <servlet-name>HelloServlet</servlet-name>
-    <servlet-class>local.gerb..HelloServlet</servlet-class>
+    <servlet-class>local.gerb.HelloServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>HelloServlet</servlet-name>

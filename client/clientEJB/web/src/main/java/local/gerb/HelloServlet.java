@@ -12,7 +12,7 @@ import java.io.StringWriter;
 public class HelloServlet extends HttpServlet {
 
     @EJB
-    private Client clientBean;
+    private ClientImpl clientBean;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -23,6 +23,9 @@ public class HelloServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
             clientBean.sayHello();
+            StringWriter sw = new StringWriter();
+            PrintWriter pw = new PrintWriter(sw, true);
+            resp.setStatus(HttpServletResponse.SC_ACCEPTED);
 
         } catch (Exception e) {
                 StringWriter sw = new StringWriter();
