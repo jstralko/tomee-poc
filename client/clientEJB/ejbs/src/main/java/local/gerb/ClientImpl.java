@@ -3,8 +3,6 @@ package local.gerb;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJBException;
 import javax.ejb.Stateless;
-import javax.ejb.TransactionAttribute;
-import javax.ejb.TransactionAttributeType;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -39,7 +37,5 @@ public class ClientImpl {
         } catch (NamingException ex) {
             throw new EJBException(ex);
         }
-
-
     }
 }
