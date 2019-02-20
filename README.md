@@ -15,6 +15,7 @@ $> ./build.sh && ./run.sh && ./shell.sh
 Open up a new terminal window:
 
 $> cd activemq
+
 $> ./build.sh && ./run.sh && ./shell.sh
 
 [ip address should be 172.17.0.3]
@@ -22,6 +23,7 @@ $> ./build.sh && ./run.sh && ./shell.sh
 Open up a new terminal window:
 
 $> cd database
+
 $> ./build.sh && ./run.sh && ./shell.sh
 
 #Now you need to create the databae called test:
@@ -32,11 +34,13 @@ $> echo "drop schema test; create schema test;" | mysql -uroot -p
 
 **You might have to redploy server since the database wasn't created. 
 $> docker stop $(docker ps -a -q | grep tomee-server)
+
 $> ./run.sh && ./shell.sh
 
 Open up a new terminal window:
 
 $> cd client
+
 $> ./build.sh && ./run.sh && ./shell.sh
 
 [we dont care about the ip address for this container]
