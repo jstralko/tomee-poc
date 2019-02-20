@@ -4,7 +4,7 @@ I have the IP addresses hardcoded and not using service discovery magic (That is
 This is POC and I'm only concern about is showing off the JavaEE functionality in TomEE.
 
 To start:
-(git clone, but if you are running you probably already cloned this project.)
+(git clone, but if you are reading you probably already cloned this project.)
 
 $> cd server/
 $> ./build.sh && ./run.sh && ./shell.sh
