@@ -1,4 +1,4 @@
-I'm not using kubernates or docker-compose, so I have to run the containers a particular order.
+I'm not using kubernetes or docker-compose, so I have to run the containers a particular order.
 
 I have the IP addresses hardcoded and not using service discovery magic (That is the next step!). 
 This is POC and I'm only concern about is showing off the JavaEE functionality in TomEE.
