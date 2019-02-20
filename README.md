@@ -34,6 +34,7 @@ $> echo "drop schema test; create schema test;" | mysql -uroot -p
 [ip adress should be 172.17.0.4]
 
 **You might have to redploy server since the database wasn't created. 
+
 $> docker stop $(docker ps -a -q | grep tomee-server)
 
 $> ./run.sh && ./shell.sh
