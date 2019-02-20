@@ -27,6 +27,7 @@ $> cd database
 $> ./build.sh && ./run.sh && ./shell.sh
 
 #Now you need to create the databae called test:
+
 $> echo "drop schema test; create schema test;" | mysql -uroot -p
 [Password root]
 
