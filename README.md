@@ -7,6 +7,7 @@ To start:
 (git clone, but if you are reading you probably already cloned this project.)
 
 $> cd server/
+
 $> ./build.sh && ./run.sh && ./shell.sh
 
 [you can check the ip address using ifconfig - it should be 172.17.0.2]
