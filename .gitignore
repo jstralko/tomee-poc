@@ -5,3 +5,5 @@
 .settings
 target
 .classpath
+.vscode
+bin

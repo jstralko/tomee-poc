@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>SpringExamples-web</artifactId>
+  <packaging>war</packaging>
+  <name>SpringExamples-web</name>
+  <parent>
+    <groupId>local.gerb</groupId>
+    <artifactId>SpringExamples</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <dependencies>
+    <dependency>
+      <groupId>local.gerb</groupId>
+      <artifactId>SpringExamples-ejbs</artifactId>
+      <type>ejb</type>
+      <scope>provided</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+      <version>6.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+      <scope>provided</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+    </dependency>
+  </dependencies>
+</project>
